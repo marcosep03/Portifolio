@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos Eduardo Pereira - Neon Portfolio</title>
+  <link rel="stylesheet" href="css/neon-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PARTICLE BACKGROUND -->
+<canvas id="particles"></canvas>
+
+<!-- PROGRESS BAR SCROLL -->
+<div class="progress-bar">
+  <div class="progress-fill"></div>
+</div>
+
+<!-- SIDE NAV -->
+<nav class="side-nav">
+  <div class="nav-profile">
+    <div class="profile-avatar">ME</div>
+    <h3>Marcos Eduardo Pereira</h3>
+  </div>
+
+  <ul class="nav-links">
+    <li data-section="sobre"><span>01</span> Sobre</li>
+    <li data-section="formacao"><span>02</span> Formação</li>
+    <li data-section="portfolio"><span>03</span> Projetos</li>
+    <li data-section="contato"><span>04</span> Contato</li>
+  </ul>
+
+  <div class="nav-theme">
+    <button id="theme-btn" class="theme-btn">🌙</button>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section active">
+    <div class="hero-wave">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="typing-effect" data-text="Desenvolvedor Full-Stack">
+          Desenvolvedor Full-Stack
+        </div>
+
+        <h1 class="hero-title">
+          Olá, sou <br>
+          <span class="gradient-text">Marcos Eduardo</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Estudante de <strong>Ciência da Computação</strong> na UNINTER.
+          Criando experiências digitais únicas com código limpo e criativo.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="22">0</span>
+            <span>anos</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat-number" data-target="2">0</span>
+            <span>projetos</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat-number" data-target="100">0</span>
+            <span>horas código</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-card">
+          <div class="card-glow"></div>
+
+          <div class="code-preview">
+            <pre><code>&lt;div class="neon"&gt;
+  Portfolio Único
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section id="formacao" class="section">
+    <div class="section-header">
+      <h2>02. Minha Jornada</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Ensino Médio</h3>
+          <span class="timeline-date">2019 - 2022</span>
+          <p>Virgílio Capoani<br>Concluído</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Uninter</h3>
+          <span class="timeline-date">2024 - Atual</span>
+          <p>Ciência da Computação</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Lwart Soluções Ambientais</h3>
+          <span class="timeline-date">2025 - Atual</span>
+          <p>Estagiário de Dados (Power BI)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="section">
+    <div class="section-header">
+      <h2>03. Meus Projetos</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <!-- PROJETO 1 -->
+      <div class="project-card">
+        <div class="project-tech"><span>HTML/CSS/JS</span></div>
+        <h3>Neon Portfolio</h3>
+        <p>Portfólio interativo com partículas e efeitos neon</p>
+        <div class="project-links">
+          <a href="#" class="link-icon demo-link" data-demo="https://github.com/seuusuario/neon-portfolio" title="Ver Demo">🔗</a>
+          <a href="#" class="link-icon copy-link" data-copy="https://github.com/seuusuario/neon-portfolio" title="Copiar Link">💾</a>
+        </div>
+      </div>
+
+      <!-- PROJETO 2 -->
+      <div class="project-card">
+        <div class="project-tech"><span>Java</span></div>
+        <h3>Gerenciamento de Garagem</h3>
+        <p>Sistema de controle de entrada e saída de veículos</p>
+        <div class="project-links">
+          <a href="https://github.com/marcosep03/projetosupport" class="link-icon demo-link" target="_blank" title="GitHub">🔗</a>
+          <a href="#" class="link-icon copy-link" data-copy="https://github.com/marcosep03/projetosupport" title="Copiar Link">💾</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="section-header">
+      <h2>04. Vamos Conversar</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div>markinhospk156@gmail.com</div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <div>(14) 99691-4833</div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>Lençóis Paulista, SP</div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Sua mensagem..." required></textarea>
+        <button type="submit" class="submit-btn">
+          <span>Enviar</span>
+          <div class="btn-wave"></div>
+        </button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/neon-script.js"></script>
+</body>
+</html>
